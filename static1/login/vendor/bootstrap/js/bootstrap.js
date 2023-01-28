@@ -295,7 +295,7 @@ var Alert = function ($) {
       $(element).detach().trigger(Event.CLOSED).remove();
     };
 
-    // static
+    // static1
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -463,7 +463,7 @@ var Button = function ($) {
       this._element = null;
     };
 
-    // static
+    // static1
 
     Button._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -927,7 +927,7 @@ var Carousel = function ($) {
       }
     };
 
-    // static
+    // static1
 
     Carousel._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -1312,7 +1312,7 @@ var Collapse = function ($) {
       }
     };
 
-    // static
+    // static1
 
     Collapse._getTargetFromElement = function _getTargetFromElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -1644,7 +1644,7 @@ var Dropdown = function ($) {
       return popperConfig;
     };
 
-    // static
+    // static1
 
     Dropdown._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -2169,7 +2169,7 @@ var Modal = function ($) {
           if (event.target !== event.currentTarget) {
             return;
           }
-          if (_this17._config.backdrop === 'static') {
+          if (_this17._config.backdrop === 'static1') {
             _this17._element.focus();
           } else {
             _this17.hide();
@@ -2301,7 +2301,7 @@ var Modal = function ($) {
       return scrollbarWidth;
     };
 
-    // static
+    // static1
 
     Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
       return this.each(function () {
@@ -2640,7 +2640,7 @@ var ScrollSpy = function ($) {
       $(this._selector).filter(Selector.ACTIVE).removeClass(ClassName.ACTIVE);
     };
 
-    // static
+    // static1
 
     ScrollSpy._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -2899,7 +2899,7 @@ var Tab = function ($) {
       }
     };
 
-    // static
+    // static1
 
     Tab._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -3551,7 +3551,7 @@ var Tooltip = function ($) {
       this.config.animation = initConfigAnimation;
     };
 
-    // static
+    // static1
 
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -3742,7 +3742,7 @@ var Popover = function ($) {
       }
     };
 
-    // static
+    // static1
 
     Popover._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {

@@ -12,3 +12,8 @@ class CurrentDateView(View):
 class IndexView(View):
     def get(self, request):
         return render(request, 'common/index.html')
+
+class Line(View):
+    def get(self, request):
+        html = f'Hello, World'
+        return HttpResponse(html)
