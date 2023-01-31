@@ -4290,7 +4290,7 @@ S2.define('select2/dropdown/attachBody',[
 
     // For statically positoned elements, we need to get the element
     // that is determining the offset
-    if ($offsetParent.css('position') === 'static1') {
+    if ($offsetParent.css('position') === 'static') {
       $offsetParent = $offsetParent.offsetParent();
     }
 
