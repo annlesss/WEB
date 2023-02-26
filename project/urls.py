@@ -20,8 +20,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('common.urls')),
-    path('', include('testapp.url')),
-    path('', include('login.urls')),
-    path('cart/', include('cart.urls'))
+    path('other/', include('apps.common.urls')),
+    path('other/', include('testapp.url')),
+    path('other/', include('apps.login.urls')),
+    path('other/cart/', include('apps.cart.urls')),
+    path('', include('apps.home.urls')),
+    path('cart/', include('apps.cart_shop.urls')),
+    path('shop/', include('apps.shop.urls')),
+    path('checkout/', include('apps.checkout.urls')),
+    path('blog/', include('apps.blog.urls')),
+    path('login/', include('apps.auth_shop.urls')),
+
 ]
